@@ -11,10 +11,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       username: 'postgres',
       password: 'postgres',
       database: 'my_db',
-      entities: ['dist/**/*.entity{.ts, .js}'],
+      entities: ['dist/**/*.entity{.ts,.js}'],
       synchronize: false,
       retryDelay: 3000,
-      retryAttempts: 10,
+      retryAttempts: 10
     }),
 
     TaskModule,
